@@ -23,6 +23,11 @@ cask "pixel-audio-bridge" do
 
   app "PixelAudioBridge.app"
 
+  zap trash: [
+    "~/.config/pixel-audio-bridge",
+    "~/Library/Preferences/com.glazkov.pixel-audio-bridge.plist",
+  ]
+
   caveats <<~EOS
     Pixel Audio Bridge also needs adb, from the Android SDK platform-tools.
     If you have Android Studio it is already at:
@@ -32,9 +37,4 @@ cask "pixel-audio-bridge" do
 
     Then enable USB debugging on the phone, plug it in, and accept the prompt.
   EOS
-
-  zap trash: [
-    "~/.config/pixel-audio-bridge",
-    "~/Library/Preferences/com.glazkov.pixel-audio-bridge.plist",
-  ]
 end
