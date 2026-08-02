@@ -1,6 +1,6 @@
 cask "pixel-audio-bridge" do
-  version "1.1.0"
-  sha256 "e5279765768cac9a0bddbc594c5fad0a74efa81a5c9242701ad334f5c8c2d738"
+  version "1.1.1"
+  sha256 "e7460acfe0d07555a6d3a5b1add81d2fde4dd99f6b4a9cc2e4b5119d9573d520"
 
   url "https://github.com/nicglazkov/pixel-audio-bridge/releases/download/v#{version}/PixelAudioBridge.dmg",
       verified: "github.com/nicglazkov/pixel-audio-bridge/"
