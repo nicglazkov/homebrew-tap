@@ -8,7 +8,7 @@ notarized by Apple, and built universal for Apple silicon and Intel.
 | Cask | What it does | Version |
 |---|---|---|
 | [**pixel-audio-bridge**](https://github.com/nicglazkov/pixel-audio-bridge) | Plays your Android phone's audio through whatever your Mac is already playing to | 1.1.1 |
-| [**overhang**](https://github.com/nicglazkov/overhang) | Recovers the menu bar icons macOS hides behind the notch | 0.4.0 |
+| [**overhang**](https://github.com/nicglazkov/overhang) | Recovers the menu bar icons macOS hides behind the notch | 0.4.1 |
 
 ## Install
 
