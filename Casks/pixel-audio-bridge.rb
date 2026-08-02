@@ -14,7 +14,6 @@ cask "pixel-audio-bridge" do
   end
 
   depends_on macos: :sonoma
-
   # scrcpy does the capture and playback, so the app cannot work without it.
   # adb is deliberately not a dependency: it ships in the android-platform-tools
   # cask, whose upstream archive is replaced in place and so periodically fails
