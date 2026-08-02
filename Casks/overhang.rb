@@ -5,7 +5,7 @@ cask "overhang" do
   url "https://github.com/nicglazkov/overhang/releases/download/v#{version}/Overhang.dmg",
       verified: "github.com/nicglazkov/overhang/"
   name "Overhang"
-  desc "Recovers the menu bar icons macOS hides behind the notch"
+  desc "Recovers menu bar icons hidden behind the notch"
   homepage "https://github.com/nicglazkov/overhang"
 
   livecheck do
@@ -13,11 +13,9 @@ cask "overhang" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Overhang.app"
 
-  zap trash: [
-    "~/Library/Preferences/com.nic.overhang.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.nic.overhang.plist"
 end
