@@ -1,6 +1,6 @@
 cask "overhang" do
-  version "0.5.1"
-  sha256 "a1ed3daaf522f931584d034f017eb45fe5482574844844f15493b0cbe1ad9167"
+  version "0.5.2"
+  sha256 "cc0c05e146d6d335357f257d46beb4c2a2df05b2d869aa39296eda74a167f78c"
 
   url "https://github.com/nicglazkov/overhang/releases/download/v#{version}/Overhang.dmg",
       verified: "github.com/nicglazkov/overhang/"
