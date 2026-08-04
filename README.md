@@ -7,7 +7,7 @@ notarized by Apple, and built universal for Apple silicon and Intel.
 
 | Cask | What it does | Version |
 |---|---|---|
-| [**jotbay**](https://nicglazkov.github.io/jotbay/) | Keeps a folder of markdown notes in sync across every machine you own | 1.6.2 |
+| [**jotbay**](https://nicglazkov.github.io/jotbay/) | Keeps a folder of markdown notes in sync across every machine you own | 1.7.0 |
 | [**pixel-audio-bridge**](https://github.com/nicglazkov/pixel-audio-bridge) | Plays your Android phone's audio through whatever your Mac is already playing to | 1.2.0 |
 | [**overhang**](https://github.com/nicglazkov/overhang) | Recovers the menu bar icons macOS hides behind the notch | 0.5.3 |
 
