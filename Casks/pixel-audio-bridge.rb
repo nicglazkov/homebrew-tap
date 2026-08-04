@@ -1,6 +1,6 @@
 cask "pixel-audio-bridge" do
-  version "1.2.0"
-  sha256 "ebe43b91e8b65b44d55afe69bb97d97fa92280d6a891fbbd4557d4520cbb3c3c"
+  version "1.3.0"
+  sha256 "218b6c4d1409b8856f477ca6225d279ecf41219baa6404bb2e752ba6508a65c3"
 
   url "https://github.com/nicglazkov/pixel-audio-bridge/releases/download/v#{version}/PixelAudioBridge.dmg",
       verified: "github.com/nicglazkov/pixel-audio-bridge/"
@@ -21,6 +21,9 @@ cask "pixel-audio-bridge" do
   depends_on formula: "scrcpy"
 
   app "PixelAudioBridge.app"
+  # Puts `pab` on PATH. The app bundles it, and the docs tell people to run
+  # `pab pair` and `pab doctor`, which without this resolve to nothing.
+  binary "#{appdir}/PixelAudioBridge.app/Contents/Resources/pab"
 
   zap trash: [
     "~/.config/pixel-audio-bridge",
