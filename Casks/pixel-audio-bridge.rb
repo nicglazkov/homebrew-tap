@@ -31,12 +31,14 @@ cask "pixel-audio-bridge" do
   ]
 
   caveats <<~EOS
-    Pixel Audio Bridge also needs adb, from the Android SDK platform-tools.
-    If you have Android Studio it is already at:
-      ~/Library/Android/sdk/platform-tools
-    Otherwise:
+    One more command, unless you already have the Android SDK:
+
       brew install --cask android-platform-tools
 
-    Then enable USB debugging on the phone, plug it in, and accept the prompt.
+    That provides adb, which this uses to reach the phone. With Android Studio
+    installed it is already at ~/Library/Android/sdk/platform-tools and the app
+    finds it there.
+
+    The app checks for everything it needs on launch and names anything missing.
   EOS
 end
