@@ -1,6 +1,6 @@
 cask "gcloud-dot" do
-  version "1.0.0"
-  sha256 "6986953bba73924522156a447c0ce9cd0502eae61edd5fe4f714c1e10c186c98"
+  version "1.0.1"
+  sha256 "48185e7efde26192d61a379c77b2b1641b4ebf0b9329c7e406a27d0fc35b22f8"
 
   url "https://github.com/nicglazkov/gcloud-dot/releases/download/v#{version}/GCloud-Dot-#{version}.dmg",
       verified: "github.com/nicglazkov/gcloud-dot/"
