@@ -1,6 +1,6 @@
 cask "gcloud-dot" do
-  version "1.0.5"
-  sha256 "a1975fc166c193bab3d371ee17244f1672c6868e31a8e1cb5b53f63ace4716e8"
+  version "1.1.1"
+  sha256 "d1658c4dc49f4223f70d6b4643d4f7ae831c85dbe1d4e82d4fed74f3d12c74d2"
 
   url "https://github.com/nicglazkov/gcloud-dot/releases/download/v#{version}/GCloud-Dot-#{version}.dmg",
       verified: "github.com/nicglazkov/gcloud-dot/"
@@ -17,7 +17,7 @@ cask "gcloud-dot" do
 
   app "GCloud Dot.app"
   # The CLI ships inside the bundle, so one cask serves both the menu bar and
-  # the terminal - and the two can never be different versions.
+  # the terminal, and the two can never be different versions.
   binary "#{appdir}/GCloud Dot.app/Contents/MacOS/gcloud-dot"
 
   # Quit it before replacing the bundle. This app is a tray icon that is always
