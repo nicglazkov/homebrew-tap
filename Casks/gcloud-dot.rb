@@ -20,6 +20,11 @@ cask "gcloud-dot" do
   # the terminal - and the two can never be different versions.
   binary "#{appdir}/GCloud Dot.app/Contents/MacOS/gcloud-dot"
 
+  # Quit it before replacing the bundle. This app is a tray icon that is always
+  # running, so without this every upgrade leaves the old process alive against
+  # files that have just been swapped underneath it.
+  uninstall quit: "com.nic.gclouddot"
+
   zap trash: [
     "~/Library/Application Support/GCloudDot",
     "~/Library/LaunchAgents/com.nic.gclouddot.plist",
