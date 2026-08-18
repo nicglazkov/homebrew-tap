@@ -1,6 +1,6 @@
 cask "jotbay" do
-  version "1.9.5"
-  sha256 "3c050fd4f6616600f30b0f357f353020f7daf52ef8216bf54b67578606dd6921"
+  version "1.10.1"
+  sha256 "3a6913e6212d984287c41ed882a59f97334af8a7d22bb2beda5793cd2789ba95"
 
   url "https://github.com/nicglazkov/jotbay/releases/download/v#{version}/Jotbay.dmg",
       verified: "github.com/nicglazkov/jotbay/"
